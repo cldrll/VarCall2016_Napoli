@@ -2,15 +2,27 @@
 Materials for the VarCall2016 course
 
 ##NGS for evolutionary biologists: from basic scripting to variant calling
-Biblioteca, Consiglio Nazionale delle Ricerche, via P. Castellino 111, 80131 Naples, Italy -  May 2-6, 2016 
- 
- 
-Recent advances in genome sequencing technologies provide unprecedented opportunities to characterise individual genomes and identify mutations relevant for the study of both evolutionary questions and diagnosis and therapy. This course runs over five days focusing on variant analysis of NGS data and is addressed to wet lab scientists with little or no previous knowledge of the use of a command line, statistical computing packages, and programming. Participants are immersed in the experience of running a complete NGS data analysis workflow, from the retrieval of raw data from bioinformatics resources, to the downstream analysis of the processed data.
+Biblioteca, Consiglio Nazionale delle Ricerche, via P. Castellino 111, 80131 Naples, Italy -  May 2-6, 2016
 
-This repository is for the course materials and it is organised as follows:
 
-- Day 1: [Unix/Linux command line](./day1/d1l1_UnixTheory.ppt) 
-- Day 1: [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf) 
+Recent advances in genome sequencing technologies provide unprecedented opportunities to characterize individual genomes and identify mutations relevant for the study of both evolutionary questions and diagnosis and therapy. This course runs over five days focusing on variant analysis of NGS data and is addressed to wet lab scientists with little or no previous knowledge of the use of a command line, statistical computing packages, and programming. Participants are immersed in the experience of running a complete NGS data analysis work-flow, from the retrieval of raw data from bioinformatics resources, to the downstream analysis of the processed data.
+
+This repository is for the course materials and it is organized as follows:
+
+|||
+|-||
+|day1 | [Unix/Linux command line](./day1/d1l1_UnixTheory.ppt)|
+|day1 | [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf)|
+|day2 |[NGS platforms](./day2/d2l1_IntroNGS.pdf)|
+|day2 | [Data format an Quality Control](./day2/d2l2_DataFormatQC.pdf) |
+|day3 |[Mapping and BAM refinement](./day3/d3l1_mapping_BAM_refinement.pdf)
+|day4 | [Variant Calling](./day4/d4l1_SNP_call.pdf)|
+|day5 | [Practical Projects](./Projects)|   
+
+
+
+- Day 1: [Unix/Linux command line](./day1/d1l1_UnixTheory.ppt)
+- Day 1: [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf)
 - Day 2: [NGS platforms](./day2/d2l1_IntroNGS.pdf)
 - Day 2: [Data format an Quality Control](./day2/d2l2_DataFormatQC.pdf)
 - Day 3: [Mapping and BAM refinement](./day3/d3l1_mapping_BAM_refinement.pdf)
