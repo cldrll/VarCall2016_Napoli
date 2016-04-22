@@ -1,21 +1,23 @@
-# VarCall2015
-Materials for the VarCall2015 course
+# VarCall2016
+Materials for the VarCall2016 course
 
 ##NGS for evolutionary biologists: from basic scripting to variant calling
-CINECA Auditorium, via dei Tizii 2/C, Rome - 23-27 November 2015
-
-Recent advances in genome sequencing technologies provide unprecedented opportunities to characterise individual genomes and identify mutations relevant for the study of both evolutionary questions and diagnosis and therapy. This course runs over five days focusing on variant analysis of NGS data and is addressed to wet lab scientists with no previous knowledge of the use of a command line, statistical computing packages, and programming. Participants are immersed in the experience of running a complete NGS data analysis workflow, from the retrieval of raw data from bioinformatics resources, to the downstream analysis of the processed data.
+Biblioteca, Consiglio Nazionale delle Ricerche, via P. Castellino 111, 80131 Naples, Italy -  May 2-6, 2016 
+ 
+ 
+Recent advances in genome sequencing technologies provide unprecedented opportunities to characterise individual genomes and identify mutations relevant for the study of both evolutionary questions and diagnosis and therapy. This course runs over five days focusing on variant analysis of NGS data and is addressed to wet lab scientists with little or no previous knowledge of the use of a command line, statistical computing packages, and programming. Participants are immersed in the experience of running a complete NGS data analysis workflow, from the retrieval of raw data from bioinformatics resources, to the downstream analysis of the processed data.
 
 This repository is for the course materials and it is organised as follows:
 
-- Day 1: [Unix/Linux command line](./1-unix_command_line) 
-- Day 1: [NGS and Population Genomics](./2-ngs_and_population_genomics)
-- Day 2: [NGS platforms_and_dataQC](./3-ngs_platforms_and_dataQC)
-- Day 3: [Mapping and BAM refinement](./4-mapping_and_bam_refinment)
-- Day 4: [Variant Calling](./5-variant_calling)
-- Day 5: [Projects](./6-projects)
+- Day 1: [Unix/Linux command line](./day1/d1l1_UnixTheory.ppt) 
+- Day 1: [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf) 
+- Day 2: [NGS platforms](./day2/d2l1_IntroNGS.pdf)
+- Day 2: [Data format an Quality Control](./day2/d2l2_DataFormatQC.pdf)
+- Day 3: [Mapping and BAM refinement](./day3/d3l1_mapping_BAM_refinement.pdf)
+- Day 4: [Variant Calling](./day4/d4l1_SNP_call.pdf)
+- Day 5: [Practical Projects](./Projects)
 
-## Projects
+## Details for Projects
 - [Before we start](Projects/00-beforewestart_sum.md)
 - [Project 1](Projects/01-Project-01_sum.md)
 - [Project 2](Projects/02-Project-02_sum.md)
