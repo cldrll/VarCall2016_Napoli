@@ -1,6 +1,6 @@
 
 
-## *Course material for:*
+### *Course material for:*
 
 #NGS for evolutionary biologists: from basic scripting to variant calling
 
