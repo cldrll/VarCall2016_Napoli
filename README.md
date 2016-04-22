@@ -1,5 +1,5 @@
 # VarCall2016
-Materials for the VarCall2016 course
+*Materials for the VarCall2016 course*
 
 ##NGS for evolutionary biologists: from basic scripting to variant calling
 Biblioteca, Consiglio Nazionale delle Ricerche, via P. Castellino 111, 80131 Naples, Italy -  May 2-6, 2016
@@ -9,35 +9,12 @@ Recent advances in genome sequencing technologies provide unprecedented opportun
 
 This repository is for the course materials and it is organized as follows:
 
-|||
-|-||
-|day1 | [Unix/Linux command line](./day1/d1l1_UnixTheory.ppt)|
-|day1 | [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf)|
-|day2 |[NGS platforms](./day2/d2l1_IntroNGS.pdf)|
-|day2 | [Data format an Quality Control](./day2/d2l2_DataFormatQC.pdf) |
-|day3 |[Mapping and BAM refinement](./day3/d3l1_mapping_BAM_refinement.pdf)
-|day4 | [Variant Calling](./day4/d4l1_SNP_call.pdf)|
-|day5 | [Practical Projects](./Projects)|   
+Days |Lessons | Tutorials
+------------ | -------------| -----------
+day1 | [Unix/Linux command line](./day1/d1l1_UnixTheory.ppt) and [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf)| [Unix](./day1/Academis_Linux.pdf) 
+day2 |[NGS platforms](./day2/d2l1_IntroNGS.pdf) and  [Data format an Quality Control](./day2/d2l2_DataFormatQC.pdf)|[Data QC](./day2/d2t1_dataQC.md)
+day3 |[Mapping and BAM refinement](./day3/d3l1_mapping_BAM_refinement.pdf)| [Mapping](d3t1_mapping_and_bam_refinement.md)|
+day4 | [Variant Calling](./day4/d4l1_SNP_call.pdf)|[SNP calling](.day4/d4t1_variantcalling_snps_tutorial.md), [SV calling](./day4/d4t2_variantcalling_stucturalvariants_tutorial.md) and [Filtering](./day4/d4t3_variantcalling_filtering_exercises.md)
+days 2-5 | [Practical Projects](./Projects)| [Project 1](Projects/01-Project-01_sum.md) and [Project 2](Projects/02-Project-02_sum.md)  
 
 
-
-- Day 1: [Unix/Linux command line](./day1/d1l1_UnixTheory.ppt)
-- Day 1: [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf)
-- Day 2: [NGS platforms](./day2/d2l1_IntroNGS.pdf)
-- Day 2: [Data format an Quality Control](./day2/d2l2_DataFormatQC.pdf)
-- Day 3: [Mapping and BAM refinement](./day3/d3l1_mapping_BAM_refinement.pdf)
-- Day 4: [Variant Calling](./day4/d4l1_SNP_call.pdf)
-- Day 5: [Practical Projects](./Projects)
-
-## Details for Projects
-- [Before we start](Projects/00-beforewestart_sum.md)
-- [Project 1](Projects/01-Project-01_sum.md)
-- [Project 2](Projects/02-Project-02_sum.md)
-
-## Tutorials
-- Day 1: T0: before we start
-- Day 1:  [T3: Data QC](Tutorials/T3_dataQC.md)
-- [T4: Mapping `.bam` refinement](Tutorials/T4_mapping_and_bam_refinement.md)
-- [T5.1: Variant Calling (SNPs)](Tutorials/T5.1_variantcalling_snps_tutorial.md)
-- [T5.2: Variant Calling (SVs)](Tutorials/T5.2_variantcalling_stucturalvariants_tutorial.md)
-- [T5.3: Variant Calling and Filtering - Exercise](Tutorials/T5.3_variantcalling_filtering_exercises.md)
