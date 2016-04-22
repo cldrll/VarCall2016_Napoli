@@ -1,8 +1,15 @@
-# VarCall2016
-*Materials for the VarCall2016 course*
 
-##NGS for evolutionary biologists: from basic scripting to variant calling
-Biblioteca, Consiglio Nazionale delle Ricerche, via P. Castellino 111, 80131 Naples, Italy -  May 2-6, 2016
+
+## *Course material for:*
+
+#NGS for evolutionary biologists: from basic scripting to variant calling
+
+ <table style="width:100%">
+  <tr>
+    <td> <img src="./Projects/img/elixir_ita_logo.png" alt="yay" height="200" width="200"></td>
+    <td>Biblioteca, Consiglio Nazionale delle Ricerche <br> via P. Castellino 111<br>  80131 Naples, Italy <br><br><i>May 2-6, 2016</i><br><br><a href="http://bioinformaticstraining.pythonanywhere.com/course/5/" >course website</a></td>
+  </tr>
+</table> 
 
 
 Recent advances in genome sequencing technologies provide unprecedented opportunities to characterize individual genomes and identify mutations relevant for the study of both evolutionary questions and diagnosis and therapy. This course runs over five days focusing on variant analysis of NGS data and is addressed to wet lab scientists with little or no previous knowledge of the use of a command line, statistical computing packages, and programming. Participants are immersed in the experience of running a complete NGS data analysis work-flow, from the retrieval of raw data from bioinformatics resources, to the downstream analysis of the processed data.
