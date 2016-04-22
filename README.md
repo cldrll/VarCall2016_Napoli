@@ -23,8 +23,8 @@ This repository is for the course materials and it is organised as follows:
 - [Project 2](Projects/02-Project-02_sum.md)
 
 ## Tutorials
-- [T0: before we start](Tutorials/T0_before_we_start.md)
-- [T3: Data QC](Tutorials/T3_dataQC.md)
+- Day 1: T0: before we start
+- Day 1:  [T3: Data QC](Tutorials/T3_dataQC.md)
 - [T4: Mapping `.bam` refinement](Tutorials/T4_mapping_and_bam_refinement.md)
 - [T5.1: Variant Calling (SNPs)](Tutorials/T5.1_variantcalling_snps_tutorial.md)
 - [T5.2: Variant Calling (SVs)](Tutorials/T5.2_variantcalling_stucturalvariants_tutorial.md)
