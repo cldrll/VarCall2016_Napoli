@@ -7,7 +7,7 @@
  <table style="width:100%">
   <tr>
     <td> <img src="./Projects/img/elixir_ita_logo.png" alt="yay" height="200" width="200"></td>
-    <td>Biblioteca, Consiglio Nazionale delle Ricerche <br> via P. Castellino 111<br>  80131 Naples, Italy <br><br><i>May 2-6, 2016</i><br><br><a href="http://bioinformaticstraining.pythonanywhere.com/course/5/" >course website</a><br><a href="./prog.md" >course program</a></td>
+    <td>Biblioteca, Consiglio Nazionale delle Ricerche <br> via P. Castellino 111<br>  80131 Naples, Italy <br><br><i>May 2-6, 2016</i><br><br><a href="http://bioinformaticstraining.pythonanywhere.com/course/5/" >course announcement</a><br><a href="./prog.md" >course program</a></td>
   </tr>
 </table> 
 
@@ -18,7 +18,7 @@ This repository is for the course materials and it is organized as follows:
 
 Days |Lessons | Tutorials
 ------------ | -------------| -----------
-day 1 | <a href="./day1/d1l1_UnixTheory.ppt">Unix/Linux command line</a>, [Basic R]() and [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf)| [Connection to remote server](), [Unix](./day1/Academis_Linux.pdf) and [R]() 
+day 1 | <a ref="./day1/d1l1_UnixTheory.ppt">Unix/Linux command line</a>, [Basic R]() and [NGS and Population Genomics](./day1/d1l2_NGSPopGen.pdf)| [Connection to remote server](), [Unix](./day1/Academis_Linux.pdf) and [R]() 
 day 2 |[NGS platforms](./day2/d2l1_IntroNGS.pdf) and  [Data format an Quality Control](./day2/d2l2_DataFormatQC.pdf)|[Data QC](./day2/d2t1_dataQC.md)
 day 3 |[Mapping and BAM refinement](./day3/d3l1_mapping_BAM_refinement.pdf)| [Mapping](d3t1_mapping_and_bam_refinement.md)|
 day 4 | [Variant Calling](./day4/d4l1_SNP_call.pdf)|[SNP calling](.day4/d4t1_variantcalling_snps_tutorial.md), [SV calling](./day4/d4t2_variantcalling_stucturalvariants_tutorial.md) and [Filtering](./day4/d4t3_variantcalling_filtering_exercises.md)
