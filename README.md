@@ -11,7 +11,7 @@
   </tr>
 </table>
 
-
+![](./Projects/img/f4_command.png)
 Recent advances in genome sequencing technologies provide unprecedented opportunities to characterize individual genomes and identify mutations relevant for the study of both evolutionary questions and diagnosis and therapy. This course runs over five days focusing on variant analysis of NGS data and is addressed to wet lab scientists with little or no previous knowledge of the use of a command line, statistical computing packages, and programming. Participants are immersed in the experience of running a complete NGS data analysis work-flow, from the retrieval of raw data from bioinformatics resources, to the downstream analysis of the processed data.
 
 This repository is for the course materials and it is organized as follows:
