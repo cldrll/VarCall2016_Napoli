@@ -1,8 +1,8 @@
 ---
 course: NGS for evolutionary biologists: from basic scripting to variant calling
 title: organizing the space
-author: Enza Colonna, Chiara Batini, Pille Hallast
-credits: Tiziana Castrignano
+author: Enza Colonna
+credits: Mario Aversano 
 time:
 ---
 
@@ -13,12 +13,11 @@ time:
     - [Ask U.G.O.](#section-id-25)
 - [Bender](#section-id-30)
   - [Get there](#section-id-32)
-  - [Modules](#section-id-45)
-  - [Workspace](#section-id-99)
+   - [Workspace](#section-id-99)
     - [/home/enza](#section-id-103)
     - [](#section-id-128)
     - [](#section-id-156)
-  - [Working on PICO](#section-id-177)
+  - [Working on Bender](#section-id-177)
     - [1. Interactive mode](#section-id-179)
     - [2. Submitting jobs to a job scheduler](#section-id-197)
       - [a) Preparing the PBS script](#section-id-211)
@@ -58,7 +57,7 @@ While doing the projects, if you have problems ask first yourself, than people i
 
 <div id='section-id-30'/>
 
-# PICO
+# Bender 
 
 <div id='section-id-32'/>
 
@@ -66,138 +65,78 @@ While doing the projects, if you have problems ask first yourself, than people i
 
 We will be hosted for this course on a machine named Bender.  This machine is on the top floor in this building.
 
-![bender](img/Bender_Rodriguez.png)
+To use remote machine the first step is to get connected to them and one protocol for connection is called [*Secure Shell*](https://en.wikipedia.org/wiki/Secure_Shell) or *SSH*. 
 
+![bender](img/benderssh.png)
 
-To **connect** to Bender:
+Before using the remote machine you should have talked to the machine administrator that will create an account for you with a username and a password. Once you obtain an account,  you can use SSH from your terminal. The basic instruction for connection is the command ```ssh``` followed by the username and the [IP address](https://en.wikipedia.org/wiki/IP_address) of the machine. Some times to  simplify we use a literal synonim of the IP address: 
+
 ```
-ssh -X username@bender.igb.cnr.it
+$ ssh username@111.111.1111.11
+
+$ ssh usrname@machinename
 
 ```
+
+Once connected, if it is the first time you will be asked to confirm that you really want to connect to the machine, otherwise you will be just asked to type a password. 
+
+*Beware: you won't se any letter on your screen while you type the password*
+
+
+We have greated a shared user name for this course that is ```corso```, while the domani name for the machine is ```bender.igb.cnr.it```. Therefore to  **connect** to Bender we will type: 
+
+```
+auser@itslaptop:$ ssh -X corso@bender.igb.cnr.it
+      __      __       .__
+      /  \    /  \ ____ |  |   ____  ____   _____   ____
+      \   \/\/   // __ \|  | _/ ___\/  _ \ /     \_/ __ \
+       \        /\  ___/|  |_\  \__(  <_> )  Y Y  \  ___/
+        \__/\  /  \___  >____/\___  >____/|__|_|  /\___  >
+             \/       \/          \/            \/     \/
+        __           __________                   .___
+      _/  |_  ____   \______   \ ____   ____    __| _/___________
+      \   __\/  _ \   |    |  _// __ \ /    \  / __ |/ __ \_  __ \
+       |  | (  <_> )  |    |   \  ___/|   |  \/ /_/ \  ___/|  | \/
+       |__|  \____/   |______  /\___  >___|  /\____ |\___  >__|
+                             \/     \/     \/      \/    \/
+
+[corso@bender ~]$ 
+
+
+```
+The ``` -X ``` option allow some graphical visualization. 
 
 <div id='section-id-45'/>
 
-## Modules
 
-Bioinformatics applications, public databases and annotations are pre-installed on PICO.
-The work environment is organized in modules, a set of installed libs,
-tools and applications available for all users.
-
-![bender](img/benderscheme.png)
-
-
-To to list the installed modules:
-
-```
-module available
-```
-
-
-**Loading** a module means that a series of (useful) shell environment variables
-will be set. To load a module two  steps are required:
-
-
-1. Initialize the module environment:
-    ```
-    module load profile/advanced
-    ```
-2. load a module program:
-    ```
-    module load name_program
-    ```
-
-**Other useful module commands**
-
-Full list of the modules available in your profile divided by: environment, libraries, compilers, tools, applications
-```
-module available
-```
-
-Unloads a specific module
-```
-module unload module_name
-```
-
-Shows the environment variables set by a specific module
-```
-module show module_name
-```
-
-Gets all informations about how to use a specific module
-```
-module help module_name
-```
-
-Gets rid of all the loaded modules
-```
-module purge
-```
-
-
-<div id='section-id-99'/>
 
 ## Workspace
 
-As you might have already heard, PICO is organized into spaces. Let's look a little bit closer to them:  
+Bender is a very organized machine. Let's look a little bit closer to this:  
+
+![bender](img/benderscheme.png)
 
 <div id='section-id-103'/>
 
-### $HOME
+### GATEWAY 
 
-This is your "home" directory, that is not super big but files are kept here for long time.
-Home is permanent, backed-up, and local.
-
-● Quota = 5GB.
-
-● For source code or important input files.
-
-To access this space:
-
-```
-cd $HOME
-```
-
-If you check where you are using the shell command `pwd` you will see something like this:
-
-```
-pwd
-
-/pico/home/userexternal/someuser
-
-```
-
+This is the access point to Bender form the public network when we ssh to Bender we arrive here as first instance. *We are not allowed to work in this space*, it is instead necessary to go in one of the Worker Nodes (see below).  
 
 <div id='section-id-128'/>
 
-### $CINECA_SCRATCH
+### WORKER NODES 
 
-This is a huge "temporary" space (all files not used for 30 days are removed)
-Scratch is a large, parallel filesystem (GPFS) with no back-up.
-
-● No quota max but a cleaning procedure removes files older than 30 days
-
-● For temporary files
-
-
-**For this course we will work here**, starting with copying all the big data files (e.g. `.fastq`)
-
-To access this space:
+You can use ```ssh``` to connect to a worker node: 
 
 ```
-cd $CINECA_SCRATCH
+MARIO 
 ```
-
-If you check where you are using the shell command `pwd` you will see something like this:
-
-```
-pwd
-
-/pico/scratch/userexternal/someuser
+but to make life easier we have created a shortcut and to go to node one you only need to type: 
 
 ```
 
+```
 
-<div id='section-id-156'/>
 
 ### $WORK
 
