@@ -1,6 +1,6 @@
 ---
 course: NGS for evolutionary biologists: from basic scripting to variant calling
-title: organizing the space
+title: getting connected and organizing the space
 author: Enza Colonna
 credits: Mario Aversano 
 time:
@@ -303,4 +303,4 @@ Job id            Name             User              Time Use S Queue
 - make a README file where you note main changes and list folder and file content
 - give files reasonable names :)
 
-![folder](img/foldertree.png =250x250)
+
