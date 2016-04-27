@@ -6,7 +6,7 @@
 
  <table style="width:100%">
   <tr>
-    <td> <img src="![](./Projects/img/elixir_ita_logo.png)" alt="yay" height="200" width="200"></td>
+    <td> <img src="/blob/master/Projects/img/elixir_ita_logo.png" alt="yay" height="200" width="200"></td>
     <td>Biblioteca, Consiglio Nazionale delle Ricerche <br> via P. Castellino 111<br>  80131 Naples, Italy <br><br><i>May 2-6, 2016</i><br><br><a href="http://bioinformaticstraining.pythonanywhere.com/course/5/" >course announcement</a><br><a href="./prog.md" >course program</a></td>
   </tr>
 </table>
