@@ -14,9 +14,9 @@ time:
 - [Bender](#section-id-30)
   - [Get there](#section-id-32)
    - [Workspace](#section-id-99)
-    - [/home/enza](#section-id-103)
-    - [](#section-id-128)
-    - [](#section-id-156)
+    - [GATEWAY](#section-id-103)
+    - [WORKER NODES](#section-id-128)
+    - [FILE SYSTEM](#section-id-156)
   - [Working on Bender](#section-id-177)
     - [1. Interactive mode](#section-id-179)
     - [2. Submitting jobs to a job scheduler](#section-id-197)
@@ -102,7 +102,7 @@ auser@itslaptop:$ ssh -X corso@bender.igb.cnr.it
 
 
 ```
-The ``` -X ``` option allow some graphical visualization. Note how username has canged at the prompt. 
+The ``` -X ``` option allow some graphical visualization. Note how username has canged at the prompt after ssh. 
 
 <div id='section-id-45'/>
 
@@ -132,32 +132,51 @@ MARIO
 but to make life easier we have created a shortcut and to go to node one you only need to type: 
 
 ```
+[corso@bender ~]$ 01
+Last login: Wed Apr 27 09:09:45 2016 from bender
+[corso@benode01 ~]$ 
 
 ```
 
 
-### $WORK
+### FILE SYSTEM 
 
-This is a space assigned to a project. While every user has its own $HOME, many users can share the area of the $WORK related to the same assigned project.  Work is permanent, backed-up and project specific.
+Once connected you will be sharing the same workspace with other users. It is therefore important to respect some rules and beware of other people folders! 
 
-● 1 TB quota by default
-
-● Permanent, backed-up
-
-To access this space:
-```
-cd $WORK
-```
-
-If you check where you are using the shell command `pwd` you will see something like this:
+The file system is subdivided in these main folders: 
 
 ```
-pwd
-
-/gpfs/work/someprojectname
+drwxrwxr-x  4 corso corso 4096 26 apr 12:34 chiara
+drwxrwxr-x  2 corso corso 4096 27 apr 14:05 enza
+drwxrwxr-x  3 corso corso 4096 22 apr 16:33 igv
+drwxrwxr-x 23 corso corso 4096 27 apr 14:05 students
+drwxrwxr-x  7 corso corso 4096 27 apr 14:00 varcall2016
 
 ```
-<div id='section-id-177'/>
+
+- The ```varcall2016``` folder contains all the files that we will need for the practicals and it is subdivided in days and projects: 
+
+```
+[corso@benode01 ~]$ ls -l varcall2016/
+totale 20
+drwxrwxr-x 3 corso corso 4096 22 apr 17:19 day1
+drwxrwxr-x 2 corso corso 4096 22 apr 15:48 day2
+drwxrwxr-x 4 corso corso 4096 25 apr 10:40 day3
+drwxrwxr-x 2 corso corso 4096 25 apr 12:44 day4
+drwxr-xr-x 4 corso corso 4096 26 apr 14:03 project_1
+drwxr-xr-x 4 corso corso 4096 26 apr 14:03 project_2
+
+```
+
+- Within ```students``` there is a folder with your name. **All you rwork should be done within this folder!**. Every time check that you are in the right place. TO navigate to your folder: 
+
+```
+[corso@benode01 ~]$ cd students/myname
+
+```
+
+
+
 
 ## Working on PICO
 
