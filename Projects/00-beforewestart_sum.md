@@ -63,12 +63,10 @@ While doing the projects, if you have problems ask first yourself, than people i
 
 ## Get there
 
-We will be hosted for this course on a machine named Bender.  This machine is on the top floor in this building.
+We will be hosted for this course on a machine named Bender. This machine is on the top floor in this building and has all the software we need installed and tested.
 
-To use remote machine the first step is to get connected to them and one protocol for connection is called [*Secure Shell*](https://en.wikipedia.org/wiki/Secure_Shell) or *SSH*. 
-
+To use remote machine the first step is to get connected to them and one protocol for connection is called [**Secure Shell**](https://en.wikipedia.org/wiki/Secure_Shell) or **SSH**. 
 ![bender](img/benderssh.png)
-
 Before using the remote machine you should have talked to the machine administrator that will create an account for you with a username and a password. Once you obtain an account,  you can use SSH from your terminal. The basic instruction for connection is the command ```ssh``` followed by the username and the [IP address](https://en.wikipedia.org/wiki/IP_address) of the machine. Some times to  simplify we use a literal synonim of the IP address: 
 
 ```
@@ -80,10 +78,10 @@ $ ssh usrname@machinename
 
 Once connected, if it is the first time you will be asked to confirm that you really want to connect to the machine, otherwise you will be just asked to type a password. 
 
-*Beware: you won't se any letter on your screen while you type the password*
+*Beware: you won't se any letter on your screen while you type the password!*
 
 
-We have greated a shared user name for this course that is ```corso```, while the domani name for the machine is ```bender.igb.cnr.it```. Therefore to  **connect** to Bender we will type: 
+We have created a shared user name for this course that is ```corso```, while the domani name for the machine is ```bender.igb.cnr.it```. Therefore to  **connect to Bender** we will type: 
 
 ```
 auser@itslaptop:$ ssh -X corso@bender.igb.cnr.it
@@ -104,7 +102,7 @@ auser@itslaptop:$ ssh -X corso@bender.igb.cnr.it
 
 
 ```
-The ``` -X ``` option allow some graphical visualization. 
+The ``` -X ``` option allow some graphical visualization. Note how username has canged at the prompt. 
 
 <div id='section-id-45'/>
 
