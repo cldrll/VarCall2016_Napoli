@@ -11,7 +11,7 @@ time:
 - [Projects](#section-id-9)
     - [Familiarize with file formats](#section-id-18)
     - [Ask U.G.O.](#section-id-25)
-- [PICO](#section-id-30)
+- [Bender](#section-id-30)
   - [Get there](#section-id-32)
   - [Modules](#section-id-45)
   - [Workspace](#section-id-99)
@@ -64,14 +64,14 @@ While doing the projects, if you have problems ask first yourself, than people i
 
 ## Get there
 
-We will be hosted for this course on the CINECA machine [PICO](http://www.cineca.it/en/news/pico-cineca-new-platform-data-analytics-applications). This machine is in [Bologna](https://en.wikipedia.org/wiki/Bologna) a nice city in north Italy.
+We will be hosted for this course on a machine named Bender.  This machine is on the top floor in this building.
 
-![pico](img/pico.png)
+![bender](img/Bender_Rodriguez.png)
 
 
-To **connect** to PICO:
+To **connect** to Bender:
 ```
-ssh -X username@login.pico.cineca.it
+ssh -X username@bender.igb.cnr.it
 
 ```
 
@@ -82,6 +82,9 @@ ssh -X username@login.pico.cineca.it
 Bioinformatics applications, public databases and annotations are pre-installed on PICO.
 The work environment is organized in modules, a set of installed libs,
 tools and applications available for all users.
+
+![bender](img/benderscheme.png)
+
 
 To to list the installed modules:
 
