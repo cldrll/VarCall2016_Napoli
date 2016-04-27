@@ -19,7 +19,7 @@ time:
 # Projects
 
 This is how the projects are going to work:
-![projects](img/projects.png)
+![projects](img/projects3.png)
 
 Projects will start from `.fastq` files and will end with a beautiful image ready to be published!
 
