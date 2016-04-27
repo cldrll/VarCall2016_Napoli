@@ -168,7 +168,7 @@ drwxr-xr-x 4 corso corso 4096 26 apr 14:03 project_2
 
 ```
 
-- Within ```students``` there is a folder with your name. **All you rwork should be done within this folder!**. Every time check that you are in the right place. TO navigate to your folder: 
+- Within ```students``` there is a folder with your name. **All your work should be done within this folder!** Every time check that you are in the right place. TO navigate to your folder: 
 
 ```
 [corso@benode01 ~]$ cd students/myname
@@ -178,7 +178,7 @@ drwxr-xr-x 4 corso corso 4096 26 apr 14:03 project_2
 
 
 
-## Working on PICO
+## Working on Bender 
 
 <div id='section-id-179'/>
 
@@ -204,11 +204,11 @@ Working in interactive mode is OK for small tasks, but if the command line we ar
 
 ### 2. Submitting jobs to a job scheduler
 
-PICO is a shared machine, that means that many users use it at the same time, therefore it is advised and polite to use queues for running commandlines.
+Bender is a shared machine, that means that many users use it at the same time, therefore it is advised and polite to use queues for running commandlines.
 
 ![queue](img/queue.png)
 
-PICO has a job scheduling system named PBS. To become familiar with PBS read its interesting story on the [PBS wiki page](https://en.wikipedia.org/wiki/Portable_Batch_System), go through the [official documentation](http://www.pbsworks.com/SupportGT.aspx?d=PBS-Professional,-Documentation), or google for one of the many tutorials available.
+Bender has a job scheduling system named PBS. To become familiar with PBS read its interesting story on the [PBS wiki page](https://en.wikipedia.org/wiki/Portable_Batch_System), go through the [official documentation](http://www.pbsworks.com/SupportGT.aspx?d=PBS-Professional,-Documentation), or google for one of the many tutorials available.
 
 In the official documentation we read that PBS consists of a set of commands and system daemons/service that perform these tasks:
 
@@ -278,7 +278,7 @@ qstat
 Most likely you will see many jobs running among which your(s).
 
 ```
-vcolonna@node013.pico:[CORSOROMA]$ qstat
+vcolonna@bender.igb.cnr.it$ qstat
 Job id            Name             User              Time Use S Queue
 ----------------  ---------------- ----------------  -------- - -----
 51133.node001     evolfun          cdarwin                  0 Q parallel        
